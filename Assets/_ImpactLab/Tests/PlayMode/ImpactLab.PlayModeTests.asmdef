@@ -1,0 +1,15 @@
+{
+  "name": "ImpactLab.PlayModeTests",
+  "rootNamespace": "ImpactLab.Tests.PlayMode",
+  "references": ["ImpactLab.Runtime"],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": ["TestAssemblies"]
+}
