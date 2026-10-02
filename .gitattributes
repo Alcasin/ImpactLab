@@ -1,0 +1,10 @@
+# Unity serialized text may contain editor-generated trailing whitespace.
+*.meta -whitespace
+*.asset -whitespace
+*.unity -whitespace
+*.prefab -whitespace
+*.mat -whitespace
+*.controller -whitespace
+*.anim -whitespace
+*.overrideController -whitespace
+*.inputactions -whitespace
