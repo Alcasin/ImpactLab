@@ -1182,6 +1182,8 @@ GameObject:
   - component: {fileID: 1155647814}
   - component: {fileID: 1155647813}
   - component: {fileID: 1155647812}
+  - component: {fileID: 1155647816}
+  - component: {fileID: 1155647815}
   m_Layer: 0
   m_Name: GameFlow
   m_TagString: Untagged
@@ -1237,6 +1239,43 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1155647815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155647811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 091cefed85c9443b983e5eb6ef2b5954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ImpactLab.Runtime::ImpactLab.Gameplay.LevelAttemptController
+  gameFlow: {fileID: 1155647813}
+  projectileLauncher: {fileID: 1155647812}
+  shotResolver: {fileID: 1155647816}
+  targetObjective: {fileID: 1556702151}
+  maximumShots: 3
+--- !u!114 &1155647816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155647811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f5e05d63b84c4c91a0b725ef7224a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ImpactLab.Runtime::ImpactLab.Physics.ShotResolver
+  monitoredBodies:
+  - {fileID: 1965502942}
+  minimumObservationTime: 0.25
+  settleLinearSpeed: 0.15
+  settleAngularSpeed: 0.5
+  settleHoldDuration: 0.3
+  maximumResolutionTime: 4
+  minimumWorldY: -5
 --- !u!1 &1359669267
 GameObject:
   m_ObjectHideFlags: 0

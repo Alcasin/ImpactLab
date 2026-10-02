@@ -155,6 +155,14 @@ namespace ImpactLab.Gameplay
             gameFlow.RequestTransition(GameFlowState.ProjectileInFlight);
         }
 
+        public void ResetForAiming()
+        {
+            // Clear even retained kinematic velocities before preparing the next shot.
+            projectileBody.isKinematic = false;
+            CancelAim();
+            projectileCollider.enabled = true;
+        }
+
         private void PrepareAtAnchor()
         {
             // Clear velocity while dynamic; Unity does not support setting it on kinematic bodies.
