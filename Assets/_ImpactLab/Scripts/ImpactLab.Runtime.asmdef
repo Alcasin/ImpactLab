@@ -1,7 +1,7 @@
 {
   "name": "ImpactLab.Runtime",
   "rootNamespace": "ImpactLab",
-  "references": [],
+  "references": ["Unity.InputSystem"],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
